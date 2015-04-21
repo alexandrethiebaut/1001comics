@@ -1,2 +1,2 @@
 # 1001comics
-Depot 1001 comics parce que voilà
+Depot 1001 comics parce que voilà lol
