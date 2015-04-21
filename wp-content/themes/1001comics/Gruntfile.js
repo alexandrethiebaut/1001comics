@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'expanded'
         },
         files: {
           'css/foundation.css': 'scss/foundation.scss'
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
           'bower_components/foundation/js/foundation/foundation.js',
 
           // Pick the componenets you need in your project
-          'bower_components/foundation/js/foundation/foundation.abide.js',
+          /*'bower_components/foundation/js/foundation/foundation.abide.js',
           'bower_components/foundation/js/foundation/foundation.accordion.js',
           'bower_components/foundation/js/foundation/foundation.alert.js',
           'bower_components/foundation/js/foundation/foundation.clearing.js',
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
           'bower_components/foundation/js/foundation/foundation.slider.js',
           'bower_components/foundation/js/foundation/foundation.tab.js',
           'bower_components/foundation/js/foundation/foundation.tooltip.js',
-          'bower_components/foundation/js/foundation/foundation.topbar.js',
+          'bower_components/foundation/js/foundation/foundation.topbar.js',*/
 
           // Include your own custom scripts (located in the custom folder)
           'js/custom/*.js'
