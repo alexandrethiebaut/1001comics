@@ -33,4 +33,49 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
-?>
+
+//---------------------------------------------------//
+// CONFIGURATION DE L'API
+//---------------------------------------------------//
+
+	error_reporting(0);
+	//$var = $_SERVER['REQUEST_URI']; var_dump($var) 
+
+	//
+	// VARIABLES
+	// 
+
+	/* API key */
+	$apiKey = 'a9af96e5dbb8a540888f2dc076092dfc922d5b8f';
+
+	/* Limit set  = 10 results */
+	$limit = '&limit=24';
+
+	/* Resoucres = Type de contenu à chercher */
+	//$resources = '&resources='.$_POST['resources'];
+	$resources = "&resources=issue";
+
+	/* Filtres = Type de contenu à afficher dans la recherche */
+	$filtres = '&field_list=image,id,name';
+
+	/* Offset */
+	$offset = "&offset"; // must be dynamic
+
+
+
+	$urlTemplate = 'http://www.comicvine.com/api/search/?format=json&';
+	$urlTemplate.= 'api_key='.$apiKey; // Format JSON - must decode
+
+	// 
+	// Configuration pour la recherche 
+	// 
+
+	/* Template pour la recherche */
+	$urlSearchTemplate = $urlTemplate.'&query='.$_POST['search'].$resources.$filtres.$limit;
+
+	//
+	// Configuration pour affihcer un résultat
+	//
+
+	/* Template pour affichage */
+	$urlResultTemplate = $urlTemplate.'&issue='.$_GET['id'];
