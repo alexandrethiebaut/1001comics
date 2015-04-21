@@ -1,33 +1,50 @@
-<?php
 
-/*
-Template Name: Result
-*/
+<?php 
+
+	/*
+	Template Name: Result
+	*/	
+		
+	get_header(); 
+
+?>
+
+<div class="row">
+	<div class="small-12 large-12 columns" role="main">
+
+<?php
 
 	//
 	// Script de pour afficher un résultat
 	//
 	
-	$searchContent = file_get_contents($urlResultTemplate);
-	$searchData = json_decode($searchContent);
+	$resultContent = file_get_contents($urlResultTemplate);
+	$resultData = json_decode($resultContent);
 
  ?>
 
 	<pre>
 		<?php var_dump($urlResultTemplate); ?>
+		<?php var_dump($resultData) ?>
 	</pre>
 
-	<h1>IPNGeijngeniezgnei</h1>
+	<h1><?= $_GET['id'] ?></h1>
 
 	<div class="row">
 		<div class="large-12 columns">
 
-			<?php foreach ($searchData->results as $k => $v) : ?>
+			<?php foreach ($resultData->results as $k => $v) : ?>
 
 				<div class="row">
-					<img class="small-6 columns" src="<?= $v->image->thumb_url; ?>" alt="">
-					<h2><?= $v->name; ?></h2>
-					<p><?= $v->description; ?></p>
+					<img class="small-6 columns" src="<?= $v->image->super_url; ?>" alt="">
+					<div class="small-6 columns">
+						<h2><?= $v->volume->name; ?> #<?= $v->issue_number ?></h2>
+						<ul>
+							<li>Titre : <?= $v->name ?></li>
+							<li>Date : <?= $v->cover_date ?></li>
+						</ul>
+						<p><?= $v->description; ?></p>
+					</div>
 				</div>
 
 			<?php endforeach; ?>
@@ -35,3 +52,5 @@ Template Name: Result
 
 		</div>
 	</div>
+
+<?php get_footer(); ?>

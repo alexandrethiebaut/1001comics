@@ -46,9 +46,12 @@ require_once('library/custom-header.php');
 	// 
 
 	/* API key */
-	$apiKey = 'a9af96e5dbb8a540888f2dc076092dfc922d5b8f';
+	$apiKey = '&api_key=a9af96e5dbb8a540888f2dc076092dfc922d5b8f';
 
-	/* Limit set  = 10 results */
+	/* Format */
+	$format = '?format=json';
+
+	/* Limit set  = 24 results */
 	$limit = '&limit=24';
 
 	/* Resoucres = Type de contenu à chercher */
@@ -62,20 +65,19 @@ require_once('library/custom-header.php');
 	$offset = "&offset"; // must be dynamic
 
 
+	$urlTemplate = 'http://www.comicvine.com/api/';
 
-	$urlTemplate = 'http://www.comicvine.com/api/search/?format=json&';
-	$urlTemplate.= 'api_key='.$apiKey; // Format JSON - must decode
 
 	// 
 	// Configuration pour la recherche 
 	// 
 
 	/* Template pour la recherche */
-	$urlSearchTemplate = $urlTemplate.'&query='.$_POST['search'].$resources.$filtres.$limit;
+	$urlSearchTemplate = $urlTemplate.'search/'.$format.$apiKey.'&query='.$_POST['search'].$resources.$filtres.$limit;
 
 	//
 	// Configuration pour affihcer un résultat
 	//
 
 	/* Template pour affichage */
-	$urlResultTemplate = $urlTemplate.'&issue='.$_GET['id'];
+	$urlResultTemplate = $urlTemplate.'issues/'.$format.$apiKey.'&filter=id:'.$_GET['id'];

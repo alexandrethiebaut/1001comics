@@ -12,7 +12,7 @@
  ?>
 
 	<pre>
-		<?php var_dump($searchTemplate); ?>
+		<?php var_dump($urlSearchTemplate); ?>
 	</pre>
 
 	<div class="row">
@@ -61,7 +61,7 @@
 				<?php endif; ?>
 
 				<div class="small-2 columns end">
-					<a href="result.php?id=<?= $v->id ?>">
+					<a href="result?id=<?= $v->id ?>">
 						<!-- <span><?php echo $v->id ?></span> -->
 						<img src="<?php echo $v->image->thumb_url ?>" alt="#">
 						<h3><?php echo $v->name ?></h3>

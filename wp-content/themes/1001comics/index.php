@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<<<<<<< Updated upstream
+
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">
 
@@ -44,13 +44,11 @@
 
 </div>
 
-=======
 	<div class="row">
 		
 	<?php require_once('accroche.php'); ?>
 
 	<?php require_once('presentation.php'); ?>
 
-	</div>
->>>>>>> Stashed changes
+
 <?php get_footer(); ?>
