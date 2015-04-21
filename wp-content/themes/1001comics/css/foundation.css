@@ -5066,19 +5066,19 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 2.125rem; }
+  font-size: 3.75rem; }
 
 h2 {
-  font-size: 1.6875rem; }
-
-h3 {
   font-size: 1.375rem; }
 
+h3 {
+  font-size: 1.25rem; }
+
 h4 {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 h5 {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 h6 {
   font-size: 1rem; }
@@ -5225,15 +5225,15 @@ blockquote, blockquote p {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
   h1 {
-    font-size: 2.75rem; }
+    font-size: 4.375rem; }
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 2rem; }
   h3 {
-    font-size: 1.6875rem; }
+    font-size: 1.5625rem; }
   h4 {
-    font-size: 1.4375rem; }
+    font-size: 1.3125rem; }
   h5 {
-    font-size: 1.125rem; }
+    font-size: 1rem; }
   h6 {
     font-size: 1rem; } }
 
@@ -5273,7 +5273,7 @@ blockquote, blockquote p {
     line-height: 2.8125rem;
     margin: 0; }
   .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4 {
-    font-size: 1.125rem; }
+    font-size: 1rem; }
 
 .left-small {
   width: 2.8125rem;
@@ -7760,11 +7760,18 @@ blockquote.alignright, img.alignright {
 .top-bar-container, .tab-bar {
   margin-bottom: 2rem; }
 
+.top-bar {
+  background: none; }
+
+.contain-to-grid {
+  background: none;
+  margin-top: 40px; }
+
 .top-bar .name h1 a {
   font-weight: 500; }
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: #272727; }
+  background: none; }
 
 .top-bar-section li.active:not(.has-form) a:hover:not(.button) {
   background: #202020; }
@@ -7790,5 +7797,84 @@ blockquote.alignright, img.alignright {
 @media only screen and (min-width:40.063em) {
   footer.row {
     margin-top: 3.75rem; } }
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-Regular.otf); }
+
+body {
+  font-family: Montserrat; }
+
+button {
+  font-size: 12px; }
+
+.spacing {
+  padding-top: 60px; }
+
+.text-center {
+  text-align: center; }
+
+#accroche h2 {
+  font-family: Montserrat;
+  font-weight: 500; }
+
+.bg-blanc {
+  background: #ffffff;
+  color: #ffffff; }
+
+.bg-grisbleu {
+  background: #29323c; }
+
+.btn-red {
+  border-radius: 50px;
+  background: #e53d4d;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding: 20px 50px;
+  font-family: Montserrat; }
+
+.btn-red:hover {
+  border-radius: 50px;
+  background: #ea4f5e;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  font-family: Montserrat; }
+
+.btn-border {
+  border: solid 1px #e53d4d;
+  color: #e53d4d;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  font-family: Montserrat;
+  background: none; }
+
+.btn-border:hover {
+  border: solid 1px #ffffff;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  font-family: Montserrat;
+  background: none;
+  transition: all 0.8s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial; }
+
+.headerbg {
+  height: 100%;
+  background: url(../../../../wp-content/uploads/2015/04/comics_bgg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.description {
+  padding: 200px 0px 50px 0px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=foundation.css.map */

@@ -2,14 +2,19 @@
 .top-bar-container, .tab-bar {
 	margin-bottom: rem-calc(32);
 }
+.top-bar{background:none;}
+
+.contain-to-grid{background:none;
+margin-top:40px;}
 
 .top-bar .name {
-	h1 a { font-weight: 500; }
+	h1 a { font-weight: 500;
+	 }
 }
 
 // A more subtle background color for the active menu item
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
-	background: #272727;
+	background: none;
 }
 .top-bar-section li.active:not(.has-form) a:hover:not(.button) {
 	background: #202020;
