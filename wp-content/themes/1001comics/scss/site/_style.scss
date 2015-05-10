@@ -10,6 +10,8 @@ button {font-size:12px;}
 
 .spacing{padding-top:60px;}
 
+.text-blanc {color: #fff;}
+
 .text-center{
 	text-align:center;
 }
@@ -71,3 +73,21 @@ button {font-size:12px;}
 	font-family:Montserrat;
 	font-weight:700;
 	text-transform:uppercase;}
+
+.ptsforts {
+ height: 175px;
+  width: 175px;
+  border-radius: 100%;
+  line-height: 225px;
+  border: solid 1px #e53d4d ;
+  color: #e53d4d;
+  vertical-align: middle;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;}
+
+  .ptsforts:hover {
+  border-radius: 20%;}

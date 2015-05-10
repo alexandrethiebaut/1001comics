@@ -22,11 +22,8 @@
 	
 	<div class="small-12 large-6 columns bg-grisbleu ">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header>
-
-				<h2><a href="<?php the_permalink(); ?>"></a></h2>
-				
-			</header>
+			
+			
 			<div class="entry-content">
 				
 

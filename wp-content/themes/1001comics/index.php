@@ -3,11 +3,13 @@
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">
 
-	<?php wp_loginout(); ?>
+
+	
+	<?php  wp_loginout(); ?>
 
 	<?php if ( is_user_logged_in() ) : ?>
 
-		<?php require_once(TEMPLATEPATH.'/parts/search.php'); ?>
+		<?php // require_once(TEMPLATEPATH.'/parts/search.php'); ?>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -37,18 +39,23 @@
 	<?php else : ?>
 		<p>pas log</p>
 	<?php endif; ?>
-
+	
 	</div>
+	
 
 	<?php //get_sidebar(); ?>
 
 </div>
 
 	<div class="row">
-		
+	
+
+
 	<?php require_once('accroche.php'); ?>
 
 	<?php require_once('presentation.php'); ?>
+
+	<?php require_once('pointsforts.php'); ?>
 
 
 <?php get_footer(); ?>
