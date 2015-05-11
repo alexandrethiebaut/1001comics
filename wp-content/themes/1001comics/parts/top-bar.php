@@ -1,4 +1,4 @@
-<div class="top-bar-container contain-to-grid show-for-medium-up">
+<div class="top-bar-container contain-to-grid show-for-medium-up fixed">
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
@@ -8,6 +8,9 @@
         <section class="top-bar-section">
             <?php foundationpress_top_bar_l(); ?>
             <?php foundationpress_top_bar_r(); ?>
+            <ul class="right">
+                    <?php  wp_loginout(); ?>
+            </ul>
         </section>
     </nav>
 </div>

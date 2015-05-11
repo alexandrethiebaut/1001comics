@@ -12,10 +12,10 @@
  ?>
 
 	<pre>
-		<?php var_dump($urlSearchTemplate); ?>
+		<?php //var_dump($urlSearchTemplate); ?>
 	</pre>
 
-	<div class="row">
+	<div class="row" style="padding-top: 100px;">
 		<div class="large-12 columns">
 			<h1>Effectuer une recherche</h1>
 		</div>
@@ -78,7 +78,7 @@
 	
 	<br>
 
-	<div class="row">
+	<div class="row" style="padding-bottom: 100px;">
 		<div class="small-12 columns end">
 			<a class="button" href="">Afficher plus de résultats</a> <!-- Je sais pas comment faire -->
 		</div>

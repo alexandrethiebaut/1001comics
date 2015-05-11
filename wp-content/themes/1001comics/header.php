@@ -30,7 +30,7 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<section class="headerbg">
+<section class="headerbg">
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 	
@@ -50,27 +50,7 @@
 		</section>
 	</nav>
 
-	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
+	<?php // get_template_part( 'parts/off-canvas-menu' ); ?>
 
 	<?php get_template_part( 'parts/top-bar' ); ?>
 	
-	<!-- DESCRIPTION du site -->
-	<div class="row">
-		
-		<div class="small-12 large-12 columns"> 
-			<h1 class="description">
-		 	<?php echo get_bloginfo ( 'description' );  ?>
-			</h1>
-
-				<button class="btn-red">Subscribe <i class="fa fa-child"></i></button>
-				<button class="btn-border">Learn more &nbsp;<i class="fa fa-arrow-down"></i></button>
-
-		</div>
-	</div>
-	
-<section class="container" role="document">
-
-	<?php do_action( 'foundationpress_after_header' ); ?>
-
-	</section>
-	</section>

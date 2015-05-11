@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="row">
+<div class="row" style="padding-top: 100px;">
 	<div class="small-12 large-12 columns" role="main">
 
 <?php
@@ -24,11 +24,11 @@
  ?>
 
 	<pre>
-		<?php var_dump($urlResultTemplate); ?>
-		<?php var_dump($resultData) ?>
+		<?php // var_dump($urlResultTemplate); ?>
+		<?php // var_dump($resultData) ?>
 	</pre>
 
-	<h1><?= $_GET['id'] ?></h1>
+	<h3># <?= $_GET['id'] ?></h3>
 
 	<div class="row">
 		<div class="large-12 columns">
