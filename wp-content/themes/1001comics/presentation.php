@@ -1,5 +1,4 @@
-<div class="row bg-blanc" id="presentation">
-	<div class="small-12 large-12 columns bg-blanc " role="main">
+
 	
 	<?php query_posts('pagename=presentation'); ?>
 
@@ -29,6 +28,5 @@
 
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
-	</div>
 	
-</div>
+	

@@ -1,5 +1,7 @@
-<div class="row bg-blanc" id="accroche">
-	<div class="small-12 large-12 columns bg-blanc text-center" role="main">
+<div id="accroche">
+
+<div class="row" i>
+	<div class="small-12 large-12 columns text-center" role="main">
 	
 	<?php query_posts('pagename=about'); ?>
 
@@ -18,7 +20,7 @@
 
 	<?php endif;?>
 
-	<div class="spacing"></div>
+	
 
 	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
 		<nav id="post-nav">
@@ -31,4 +33,4 @@
 
 	</div>
 	
-</div>
+</div></div>

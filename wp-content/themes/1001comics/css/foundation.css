@@ -442,12 +442,13 @@ select {
   width: 100%; }
 
 .row {
-  width: 100%;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  
+  }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -5069,7 +5070,9 @@ h1 {
   font-size: 3.75rem; }
 
 h2 {
-  font-size: 1.375rem; }
+  font-size: 1.375rem; 
+font-family: "Montserrat", sans-serif;
+font-weight: 600;}
 
 h3 {
   font-size: 1.25rem; }
@@ -7794,6 +7797,10 @@ blockquote.alignright, img.alignright {
   #homepage-hero .download {
     margin-top: 1.25rem; }
 
+#ptsforts {background-color: #212931;
+color: #fff;
+font-size:1em;}
+
 @media only screen and (min-width:40.063em) {
   footer.row {
     margin-top: 3.75rem; } }
@@ -7807,6 +7814,8 @@ body {
 
 button {
   font-size: 12px; }
+
+.gris {color:#cecece; }
 
 .spacing {
   padding-top: 60px; }
@@ -7833,8 +7842,11 @@ button {
   background: #e53d4d;
   text-transform: uppercase;
   margin-right: 10px;
-  padding: 20px 50px;
-  font-family: Montserrat; }
+  padding: 20px 60px;
+  font-family: Montserrat;
+  margin: 0 auto;
+  text-align: center;
+  display: block; }
 
 .btn-red:hover {
   border-radius: 50px;
@@ -7866,7 +7878,7 @@ button {
   transition-delay: initial; }
 
 .headerbg {
-  height: 100%;
+  /*height: 100%;*/
   background: url(../../../../wp-content/uploads/2015/04/comics_bgg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7874,28 +7886,29 @@ button {
   background-size: cover; }
 
 .description {
-  padding: 200px 0px 50px 0px;
+  padding: 0px 0px 0px 0px;
   color: #ffffff;
   font-family: Montserrat;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .ptsforts {
-  height: 175px;
-  width: 175px;
-  border-radius: 100%;
-  line-height: 225px;
-  border: solid 1px #e53d4d;
-  color: #e53d4d;
-  vertical-align: middle;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-delay: initial; }
+  color: #999999;
+  display: block;
+  float: left;
+  text-align: left;
+}
 
-.ptsforts:hover {
-  border-radius: 20%; }
+.ft-rouge {color: #e53d4d;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+margin-left: 4em;}
+
+.container {width: 100%}
+
+#accroche{background:url(../../../../wp-content/uploads/2015/04/bg_blanc.jpg) no-repeat center center fixed;}
 
 /*# sourceMappingURL=foundation.css.map */

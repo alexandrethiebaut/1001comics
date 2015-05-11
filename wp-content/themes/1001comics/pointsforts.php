@@ -1,9 +1,13 @@
-
-
-<div class="content container " id="ptsforts">
+<div class="content container inner-wrap " id="ptsforts">
 	
 
-	<div class="col-md-12" >
+	<div class="large-12 columns" >
+
+<div class="row content container " id="ptsforts">
+	
+
+	<div class="large-12 columns" > 
+
 
 		<div class="spacing"></div>
 
@@ -19,7 +23,7 @@
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				
-				<div class="col-md-3" ><?php get_template_part( 'content4', get_post_format() ); ?></div>
+				<div class="large-4 columns" ><?php get_template_part( 'content4', get_post_format() ); ?></div>
 			
 			<?php endwhile; ?>
 
@@ -31,7 +35,14 @@
 		<?php endif;?>
 			<?php wp_reset_query(); ?>
 
+
 	</div>
+
+	</div>
+
+
 	
+
+	</div>
 
 </div>
