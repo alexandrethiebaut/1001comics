@@ -36,7 +36,7 @@
 				<?php endif; ?>
 
 				<div class="small-6 medium-4 large-2 columns end">
-					<a href="result?id=<?= $v->id ?>">
+					<a href="results?id=<?= $v->id ?>">
 						<!-- <span><?php echo $v->id ?></span> -->
 						<img src="<?php echo $v->image->thumb_url ?>" alt="#">
 						<h3 class="gris"><?php echo $v->name ?></h3>
