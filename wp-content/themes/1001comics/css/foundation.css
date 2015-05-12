@@ -7837,6 +7837,14 @@ button {
 .bg-grisbleu {
   background: #29323c; }
 
+.red {color:#e53d4d }
+
+.red:hover {color:#ea4f5e}
+
+.bg-red {background: #e53d4d;}
+
+.bg-red:hover {background: #ea4f5e;}
+
 .btn-red {
   border-radius: 50px;
   background: #e53d4d;
@@ -7911,4 +7919,8 @@ margin-left: 4em;}
 
 #accroche{background:url(../../../../wp-content/uploads/2015/04/bg_blanc.jpg) no-repeat center center fixed;}
 
+.comic:hover {
+  opacity: 0.5;}
+
+  
 /*# sourceMappingURL=foundation.css.map */

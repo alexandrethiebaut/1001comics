@@ -1,3 +1,5 @@
+
+
 <?php do_action( 'foundationpress_before_searchform' ); ?>
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
 	<div class="row collapse">
@@ -7,9 +9,10 @@
 		</div>
 		<?php do_action( 'foundationpress_searchform_before_search_button' ); ?>
 		<div class="small-4 columns">
-			<input type="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'FoundationPress' ); ?>" class="prefix button">
+			<input type="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'FoundationPress' ); ?>" class="red prefix button">
 		</div>
 		<?php do_action( 'foundationpress_searchform_after_search_button' ); ?>
 	</div>
 </form>
 <?php do_action( 'foundationpress_after_searchform' ); ?>
+

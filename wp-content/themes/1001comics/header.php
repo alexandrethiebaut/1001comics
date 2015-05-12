@@ -30,7 +30,7 @@
 		<?php wp_head(); ?>
 	</head>
 
-<section class="headerbg">
+
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 	
@@ -50,18 +50,18 @@
 		</section>
 	</nav>
 
-	<?php // get_template_part( 'parts/off-canvas-menu' ); ?>
+	<?php  get_template_part( 'parts/off-canvas-menu' ); ?>
 
 	<?php get_template_part( 'parts/top-bar' ); ?>
 	
 
 
-	
+
 	
 <section class="container" role="document">
 
 	<?php do_action( 'foundationpress_after_header' ); ?>
 
 	</section>
-	</section>
+	
 
