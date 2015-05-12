@@ -31,10 +31,36 @@
 
 		
 		
+		<section class="headerbg">
+<!-- DESCRIPTION du site -->
+	<div class="row">
 		
+		<div class="small-12 large-12 columns"> 
 
-	
-	
+
+		<div class="spacing"></div>
+		<div class="spacing"></div>
+			<h1 class="description "><?php bloginfo( 'name' ); ?> </h1>
+
+			<h1 class="description">
+		 	<?php echo get_bloginfo ( 'description' );  ?>
+			</h1>
+
+		
+			<p class="gris text-center">La plus vaste des bibliothèque de comics</p>
+
+		<div class="spacing"></div>
+
+			<button class="btn-red spacing">Se connecter <i class="fa fa-child"></i></button>
+
+		<div class="spacing"></div>
+
+		<img class="spacing" src="wp-content/uploads/2015/04/smartphone.png">
+		</div>
+	</div>
+	<!-- DESCRIPTION du site -->
+
+	</section></section>
 		
 <?php require_once('pointsforts.php'); ?>
 
