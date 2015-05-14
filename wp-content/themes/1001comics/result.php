@@ -45,6 +45,7 @@
 						</ul>
 						<p><?= $v->description; ?></p>
 					</div>
+					<button class="addtolist button large round" data-issue="<?php echo $_GET['id']?>">Ajouter à ma collection</button>
 				</div>
 
 			<?php endforeach; ?>

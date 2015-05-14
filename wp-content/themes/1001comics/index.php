@@ -35,6 +35,7 @@
 		</div>
 		
 		</section>
+
 		<!-- categorie ACTUALITES -->
 		
 		<?php do_action( 'foundationpress_after_content' ); ?>

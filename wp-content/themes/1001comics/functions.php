@@ -43,14 +43,22 @@ function add_js_scripts() {
 }
 add_action('wp_enqueue_scripts', 'add_js_scripts');
 
+
+add_action( 'wp_ajax_add_to_list', 'add_to_list' );
+add_action( 'wp_ajax_nopriv_add_to_list', 'add_to_list' );
+
 // #AJOUW
 function add_to_list() {
 
-	$param = $_POST['param'];
+	global $current_user, $wpdb;
 
-	echo $param;
+    $IDUser = $current_user->data->ID;
+    $IDVolume = $_POST['param'];
 
-	die();
+    $insert = $wpdb->insert($wpdb->prefix.'userlist_issue', array('Id' => $IDVolume, 'User_id' => $IDUser));
+    echo $insert;
+
+    die();
 }
 
 
