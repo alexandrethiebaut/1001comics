@@ -1,7 +1,7 @@
 .DS_Store
 wp-config.php
 wp-content/uploads/
-wp-admin/
-wp-includes/
+wp-admin\
+wp-includes\
 .htaccess
 
