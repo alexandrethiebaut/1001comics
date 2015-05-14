@@ -33,6 +33,27 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Configuratuin AJAX
+
+function add_js_scripts() {
+	wp_enqueue_script( 'script', get_template_directory_uri().'/js/custom/addtolist.js', array('jquery'), '1.0', true );
+
+	// pass Ajax Url to script.js
+	wp_localize_script('script', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+}
+add_action('wp_enqueue_scripts', 'add_js_scripts');
+
+// #AJOUW
+function add_to_list() {
+
+	$param = $_POST['param'];
+
+	echo $param;
+
+	die();
+}
+
+
 
 //---------------------------------------------------//
 // CONFIGURATION DE L'API
