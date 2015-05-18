@@ -33,7 +33,7 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
-// Configuratuin AJAX
+// Configuration AJAX
 
 function add_js_scripts() {
 	wp_enqueue_script( 'script', get_template_directory_uri().'/js/custom/addtolist.js', array('jquery'), '1.0', true );
@@ -41,8 +41,8 @@ function add_js_scripts() {
 	// pass Ajax Url to script.js
 	wp_localize_script('script', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
 }
-add_action('wp_enqueue_scripts', 'add_js_scripts');
 
+add_action('wp_enqueue_scripts', 'add_js_scripts');
 
 add_action( 'wp_ajax_add_to_list', 'add_to_list' );
 add_action( 'wp_ajax_nopriv_add_to_list', 'add_to_list' );
