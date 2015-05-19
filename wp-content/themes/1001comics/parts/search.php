@@ -11,13 +11,12 @@
 
  ?>
 
-	<pre>
-		<?php //var_dump($urlSearchTemplate); ?>
-	</pre>
-
 	<div class="row" style="padding-top: 100px;">
 		<div class="spacing"></div>
 		<div class="large-12 columns">
+		<pre>
+			<?php //var_dump($searchData); ?>
+		</pre>
 			<h2 class="gris">Effectuer une recherche</h2>
 		</div>
 	</div>
@@ -78,8 +77,20 @@
 				<div class="small-6 medium-4 large-2 columns end">
 					<a href="results/?id=<?= $v->id ?>">
 						<!-- <span><?php echo $v->id ?></span> -->
-						<img src="<?php echo $v->image->thumb_url ?>" alt="#">
-						<h3 class="gris"><?php echo $v->name ?></h3>
+						<img src="<?php echo $v->image->super_url ?>" alt="#">
+
+						<?php if (!empty($v->name)) : ?>
+							<h3 class="gris"><?php echo $v->name; ?></h3>
+						<?php else : ?>
+						<?php endif; ?>
+						<h3 class="gris"><?php echo $v->volume->name; ?> #<?php echo $v->issue_number; ?></h3>
+
+						<?php if (!empty($v->store_date)) : ?>
+							<?php $date_added = new DateTime($v->store_date); ?>
+							<h5 class="gris"><?php echo $date_added->format('F d, Y'); ?></h5>
+						<?php else : ?>
+						<?php endif ?>
+
 						<div class="spacing"></div>
 					</a>
 				</div>

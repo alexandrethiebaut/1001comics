@@ -88,7 +88,7 @@ function add_to_list() {
 	$resources = "&resources=issue";
 
 	/* Filtres = Type de contenu à afficher dans la recherche */
-	$filtres = '&field_list=image,id,name';
+	$filtres = '&field_list=image,id,name,volume,issue_number,store_date';
 
 	/* Offset */
 	$offset = "&offset"; // must be dynamic
