@@ -5168,9 +5168,11 @@ ol {
 /* Definition Lists */
 dl dt {
   margin-bottom: 0.3rem;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: sans-serif; }
 dl dd {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.5rem;
+  font-family: sans-serif; }
 
 /* Abbreviations */
 abbr, acronym {
@@ -7922,5 +7924,7 @@ margin-left: 4em;}
 .comic:hover {
   opacity: 0.5;}
 
+.addtolist {margin-top: 1em;
+}
   
 /*# sourceMappingURL=foundation.css.map */

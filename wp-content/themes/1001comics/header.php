@@ -28,14 +28,30 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		
 		<?php wp_head(); ?>
+		
 	</head>
 
 
 	<body <?php body_class(); ?>>
+
+	<!-- PARTAGE FACEBOOK -->
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- PARTAGE FACEBOOK -->
+	
+
 	<?php do_action( 'foundationpress_after_body' ); ?>
 	
 	<div class="off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
+
+	
 	
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 	
