@@ -75,6 +75,21 @@ function add_to_list() {
     die();
 }
 
+// #RECWACHE
+// function display_collection() {
+
+// 	global $current_user, $wpdb;
+
+//     $IDUser = $current_user->data->ID;
+//     $userlist_issue = $wpdb->prefix.'userlist_issue';
+// 	$select = $wpdb->get_results("SELECT * FROM $userlist_issue");
+
+//     echo '<pre>';
+// 	    var_dump($select);
+//     echo '</pre>';
+// }
+
+
 
 
 //---------------------------------------------------//
