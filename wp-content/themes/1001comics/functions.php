@@ -53,9 +53,23 @@ function add_to_list() {
 	global $current_user, $wpdb;
 
     $IDUser = $current_user->data->ID;
-    $IDVolume = $_POST['param'];
+    $IDVolume = $_POST['idIssue'];
+    $IssueName= $_POST['issue_name'];
+    $VolumeName = $_POST['volume_name'];
+    $IssueNumber = $_POST['issue_number'];
+    $CoverSrc = $_POST['srcCover'];
 
-    $insert = $wpdb->insert($wpdb->prefix.'userlist_issue', array('Id' => $IDVolume, 'User_id' => $IDUser));
+    $insert = $wpdb->insert($wpdb->prefix.'userlist_issue', 
+    	
+    	array(
+    		'Id' => $IDVolume, 
+    		'User_id' => $IDUser,
+    		'Issue_name' => $IssueName,
+    		'Volume_name' => $VolumeName,
+    		'Issue_number' => $IssueNumber,
+    		'Cover_source' => $CoverSrc
+   		 ));
+
     echo $insert;
 
     die();

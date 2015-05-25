@@ -38,7 +38,7 @@
 					<div class="small-6 columns">
 						<div class="row collapse">
 							<img class="small-12 columns" src="<?= $v->image->super_url; ?>" alt="">
-							<button class="small-12 columns addtolist button large round" data-issue="<?php echo $_GET['id']?>">Ajouter à ma collection</button>
+							<button class="small-12 columns addtolist button large round" data-issue="<?php echo $_GET['id']?>" data-volumename="<?php echo $v->volume->name; ?>" data-issuename="<?php echo $v->name; ?>" data-issuenum="<?php echo $v->issue_number; ?>" data-thumbsrc="<?php echo $v->image->super_url; ?>">Ajouter à ma collection</button>
 							<button class="small-12 columns button large round" data-issue="<?php echo $_GET['id']?>">Marquer comme lu</button>
 						</div>						
 					</div>
