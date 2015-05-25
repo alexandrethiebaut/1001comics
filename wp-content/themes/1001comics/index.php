@@ -50,8 +50,8 @@
 		<div class="spacing"></div>
 
 			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/comic.jpg">
-				<h4 class="gris">Résolution Wolverine </h4>
+				<img class="comic" src="wp-content/uploads/2015/04/batmanC.jpg">
+				<h4 class="gris">The Merman Batman</h4>
 				<p class="gris">12/04/15</p>
 			</div>
 
@@ -62,8 +62,8 @@
 			</div>
 
 			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/comic.jpg">
-				<h4 class="gris">Résolution Wolverine </h4>
+				<img class="comic" src="wp-content/uploads/2015/04/batmanC.jpg">
+				<h4 class="gris">The Merman Batman</h4>
 				<p class="gris">12/04/15</p>
 			</div>
 
@@ -74,8 +74,8 @@
 			</div>
 
 			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/comic.jpg">
-				<h4 class="gris">Résolution Wolverine </h4>
+				<img class="comic" src="wp-content/uploads/2015/04/batmanC.jpg">
+				<h4 class="gris">The Merman Batman</h4>
 				<p class="gris">12/04/15</p>
 			</div>
 
