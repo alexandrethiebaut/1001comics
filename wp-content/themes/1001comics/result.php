@@ -9,7 +9,7 @@
 
 ?>
 <section class="headerbg">
-/div><div class="spacing"></div>
+<div class="spacing"></div>
 <div class="row ">
 	<div class="small-12 large-12 columns" role="main">
 
