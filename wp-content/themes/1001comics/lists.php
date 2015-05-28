@@ -32,24 +32,24 @@
 				<?php endif; ?>
 
 				<div class="small-6 medium-4 large-2 columns end">
-					<a href="#">
+					<a href="results/?id=<?php echo $k->Id ?>">
 						<!-- <span><?php echo $k->id ?></span> -->
 						<img src="<?php echo $k->Cover_source ?>" alt="#">
 
 						<?php if (!empty($k->Issue_name)) : ?>
 							<h3 class="gris"><?php echo $k->Issue_name; ?></h3>
 						<?php else : ?>
+							<h3 class="gris"><?php echo $k->Volume_name; ?> #<?php echo $k->Issue_number; ?></h3>
 						<?php endif; ?>
-						<h3 class="gris"><?php echo $k->Volume_name; ?> #<?php echo $k->Issue_number; ?></h3>
 
 						<?php if (!empty($k->store_date)) : ?>
 							<?php $date_added = new DateTime($k->store_date); ?>
 							<h5 class="gris"><?php echo $date_added->format('F d, Y'); ?></h5>
 						<?php else : ?>
 						<?php endif ?>
-
-						<div class="spacing"></div>
 					</a>
+					<button class="deleteoflist" data-issue="<?php echo $k->Id; ?>">Supprimer</button>
+
 				</div>
 				
 			<?php $rownumber++; ?>

@@ -36,16 +36,24 @@ require_once('library/custom-header.php');
 // Configuration AJAX
 
 function add_js_scripts() {
-	wp_enqueue_script( 'script', get_template_directory_uri().'/js/custom/addtolist.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'addtolist', get_template_directory_uri().'/js/custom/addtolist.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'deleteoflist', get_template_directory_uri().'/js/custom/deleteoflist.js', array('jquery'), '1.0', true );
+
 
 	// pass Ajax Url to script.js
-	wp_localize_script('script', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+	wp_localize_script('addtolist', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+	wp_localize_script('deleteoflist', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+
 }
 
 add_action('wp_enqueue_scripts', 'add_js_scripts');
 
 add_action( 'wp_ajax_add_to_list', 'add_to_list' );
 add_action( 'wp_ajax_nopriv_add_to_list', 'add_to_list' );
+
+add_action( 'wp_ajax_delete_of_list', 'delete_of_list' );
+add_action( 'wp_ajax_nopriv_delete_of_list', 'delete_of_list' );
+
 
 // #AJOUW
 function add_to_list() {
@@ -71,6 +79,21 @@ function add_to_list() {
    		 ));
 
     echo $insert;
+
+    die();
+}
+
+// #DEYLEYTE
+function delete_of_list() {
+
+	global $current_user, $wpdb;
+
+    $IDUser = $current_user->data->ID;
+    $IDIssue = $_POST['idIssue'];
+
+    $delete = $wpdb->delete( $wpdb->prefix.'userlist_issue', array( 'Id' => $IDIssue ) );
+
+    echo $delete;
 
     die();
 }
