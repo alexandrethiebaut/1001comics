@@ -134,7 +134,7 @@ function add_to_list() {
 	$urlSearchTemplate = $urlTemplate.'search/'.$format.$apiKey.'&query='.$_POST['search'].$resources.$filtres.$limit;
 
 	//
-	// Configuration pour affihcer un résultat
+	// Configuration pour afficher un résultat
 	//
 
 	/* Template pour affichage */
