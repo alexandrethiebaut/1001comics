@@ -122,9 +122,7 @@ function add_to_list() {
 	/* Offset */
 	$offset = "&offset"; // must be dynamic
 
-
 	$urlTemplate = 'http://www.comicvine.com/api/';
-
 
 	// 
 	// Configuration pour la recherche 
