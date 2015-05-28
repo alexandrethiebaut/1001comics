@@ -113,7 +113,7 @@
 
 		<div class="spacing"></div>
 
-			<button class="btn-red spacing">Se connecter <i class="fa fa-child"></i></button>
+			<a class="btn-red spacing medium button" href="<?php echo wp_login_url( home_url()); ?>" title="Se Connecter">Se Connecter <i class="fa fa-child"></i></a>
 
 		<div class="spacing"></div>
 
