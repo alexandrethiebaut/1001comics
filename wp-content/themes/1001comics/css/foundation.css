@@ -60,6 +60,8 @@ audio:not([controls]) {
 /**
  * Remove the gray background color from active links in IE 10.
  */
+.block {display: block;}
+
 a {
   background-color: transparent; }
 
@@ -7850,10 +7852,10 @@ button {
 .btn-red {
   border-radius: 50px;
   background: #e53d4d;
-  text-transform: uppercase;
-  margin-right: 10px;
-  padding: 20px 60px;
-  font-family: Montserrat;
+  text-transform: uppercase; 
+  margin-top: 1em;
+  padding: 20px 50px;
+  font-family: sans-serif;
   margin: 0 auto;
   text-align: center;
   display: block; }
@@ -7863,15 +7865,22 @@ button {
   background: #ea4f5e;
   text-transform: uppercase;
   padding: 20px 50px;
-  font-family: Montserrat; }
+
+   font-family: sans-serif;
+   transition: all 0.8s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial; }
 
 .btn-border {
   border: solid 1px #e53d4d;
   color: #e53d4d;
   border-radius: 50px;
+  margin-top: 1em;
   text-transform: uppercase;
   padding: 20px 50px;
-  font-family: Montserrat;
+   font-family: sans-serif;
   background: none; }
 
 .btn-border:hover {
@@ -7879,7 +7888,7 @@ button {
   border-radius: 50px;
   text-transform: uppercase;
   padding: 20px 50px;
-  font-family: Montserrat;
+  font-family: sans-serif;
   background: none;
   transition: all 0.8s ease-in-out;
   transition-property: all;

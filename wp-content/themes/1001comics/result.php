@@ -5,11 +5,11 @@
 	Template Name: Result
 	*/	
 		
-	get_header(); 
+	get_header(product); 
 
 ?>
 <section class="headerbg">
-/div><div class="spacing"></div>
+<div class="spacing"></div>
 <div class="row ">
 	<div class="small-12 large-12 columns" role="main">
 
@@ -40,9 +40,9 @@
 						<div class="row collapse"> 
 							<img class="small-11 columns" src="<?= $v->image->super_url; ?>" alt=""> 
 
-							<button class="small-11 columns addtolist button large round" data-issue="<?php echo $_GET['id']?>" data-volumename="<?php echo $v->volume->name; ?>" data-issuename="<?php echo $v->name; ?>" data-issuenum="<?php echo $v->issue_number; ?>" data-thumbsrc="<?php echo $v->image->super_url; ?>">Ajouter à ma collection</button>
+							<button class="small-11 columns addtolist button large round btn-red" data-issue="<?php echo $_GET['id']?>" data-volumename="<?php echo $v->volume->name; ?>" data-issuename="<?php echo $v->name; ?>" data-issuenum="<?php echo $v->issue_number; ?>" data-thumbsrc="<?php echo $v->image->super_url; ?>">Ajouter à ma collection</button>
 
-							<button class="small-11 left columns button large round" data-issue="<?php echo $_GET['id']?>">Marquer comme lu</button>
+							<button class="small-11 left columns button large round btn-border" data-issue="<?php echo $_GET['id']?>">Marquer comme lu</button>
 						</div>						
 					</div> 
 
