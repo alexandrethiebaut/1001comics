@@ -5,7 +5,7 @@
 	Template Name: Collection
 	*/	
 		
-	get_header();
+	get_header(product);
 
 	global $current_user, $wpdb;
 
@@ -14,12 +14,15 @@
 	$select = $wpdb->get_results("SELECT * FROM $userlist_issue");
 
 ?>
-
+<section class="headerbg">
 <div class="row">
 
 	<div class="small-12 large-12 columns" role="main">
+	<div class="spacing"></div>
+	<h1 class="gris text-center">Ma collection</h1>
+	<h4 class="gris text-center">- 1001 Comics -</h4>
+	<div class="spacing"></div>
 	
-	<h2>Ma collection</h2>
 
 		<div class="row">
 			<?php $rownumber = 0; foreach ($select as $k) : ?>
@@ -59,5 +62,5 @@
 		</div>
 
 	</div>
-
+</section>
 <?php get_footer(); ?>
