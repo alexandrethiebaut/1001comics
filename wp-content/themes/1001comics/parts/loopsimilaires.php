@@ -1,12 +1,12 @@
 <?php
 
 	//
-	// Affciher les sorties similiaires
+	// Afficher les sorties similiaires
 	// 
 
 	//http://www.comicvine.com/api/issues/?api_key=78b8df15393111761e1a94888369a99762a13b0a&format=json&filter=volume:26262
 
-	$urlSimilaryIssues = $urlNewsTemplate = $urlTemplate.'issues/'.$format.$apiKey.'&filter=volume:'.$volumeId.'&limit=6';
+	$urlSimilaryIssues = $urlTemplate.'issues/'.$format.$apiKey.'&filter=volume:'.$volumeId.'&limit=6';
 
 	$similaryContent = file_get_contents($urlSimilaryIssues);
 	$similaryData = json_decode($similaryContent);
