@@ -15,7 +15,6 @@
 		<div class="spacing"></div>
 		<div class="large-12 columns">
 		<pre>
-			
 			<?php //var_dump($searchData); ?>
 		</pre>
 			<h2 class="gris">Effectuer une recherche</h2>
@@ -54,12 +53,12 @@
 
 	<!-- Script d'affichage des données -->
 	<?php if (isset($_POST['search']) && ($_POST['search'] != '')) : ?>
-	<h1 class="gris text-center">Résultats de la recherche pour <br> <h2 class="red text-center">"<?php echo $_POST['search']; ?>"</h2></h1>
+
 		<div class="row" style="padding-top: 100px;">
 		<div class="spacing"></div>
 			<div class="large-12 columns">
-				
-			
+				<h2 class="gris">Résultats de la recherche pour <br>"<?php echo $_POST['search']; ?>"</h2>
+		<div class="spacing"></div>		
 			</div>
 		</div>
 
@@ -71,7 +70,7 @@
 				<?php if(($rownumber%6) == 0) : ?>
 					
 					</div> <!-- Fermeture de la current row -->
-		<div class="row"> <!-- Ouverture de la row suivante -->
+					<div class="row"> <!-- Ouverture de la row suivante -->
 
 				<?php endif; ?>
 
@@ -81,10 +80,10 @@
 						<img src="<?php echo $v->image->super_url ?>" alt="#">
 
 						<?php if (!empty($v->name)) : ?>
-							<h3 class="gris"><?php echo $v->name; ?></h3>
+							<h3 class="text-blanc"><?php echo $v->name; ?></h3>
 						<?php else : ?>
 						<?php endif; ?>
-						<h3 class="gris"><?php echo $v->volume->name; ?> #<?php echo $v->issue_number; ?></h3>
+						<h5 class="gris"><?php echo $v->volume->name; ?> #<?php echo $v->issue_number; ?></h5>
 
 						<?php if (!empty($v->store_date)) : ?>
 							<?php $date_added = new DateTime($v->store_date); ?>

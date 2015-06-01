@@ -32,7 +32,7 @@
 	</head>
 
 
-	<body class="bg-grisbleu" <?php body_class(); ?>>
+	<body <?php body_class(); ?>>
 
 	<!-- PARTAGE FACEBOOK -->
 	<div id="fb-root"></div>
@@ -56,9 +56,6 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 	
 	<nav class="tab-bar show-for-small-only">
-
-		
-		
 		<section class="left-small">
 			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 		</section>

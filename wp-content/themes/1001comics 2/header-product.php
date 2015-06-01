@@ -32,7 +32,7 @@
 	</head>
 
 
-	<body class="bg-grisbleu" <?php body_class(); ?>>
+	<body <?php body_class(); ?>>
 
 	<!-- PARTAGE FACEBOOK -->
 	<div id="fb-root"></div>
@@ -44,11 +44,11 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 	<!-- PARTAGE FACEBOOK -->
-	
+
 
 	<?php do_action( 'foundationpress_after_body' ); ?>
 	
-	<div class="off-canvas-wrap" data-offcanvas>
+	<div class="off-canvas-wrap bg-grisbleu" data-offcanvas>
 	<div class="inner-wrap">
 
 	
@@ -57,21 +57,21 @@
 	
 	<nav class="tab-bar show-for-small-only">
 
-		
-		
+	<img src="../wp-content/uploads/2015/04/logoRouge.jpg">
+
 		<section class="left-small">
 			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 		</section>
 		<section class="middle tab-bar-section">
 			
-			<h1 class="title"><?php bloginfo( 'name' ); ?> </h1>
+			<h1 class="title"><?php bloginfo( 'name' ); ?> </h1> 
 			
 		</section>
 	</nav>
 
 	<?php //get_template_part( 'parts/off-canvas-menu' ); ?>
 
-	<?php get_template_part( 'parts/top-bar' ); ?>
+	<?php get_template_part( 'parts/top-bar-product' ); ?>
 	
 
 
