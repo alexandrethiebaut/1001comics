@@ -4,6 +4,12 @@
 	
 		
 	<?php if ( is_user_logged_in() ) : ?>
+		
+		<div class="row" style="padding-top:100px; text-align:center;">
+			<div class="small-12 columns">
+				<h2 style="color:white; font-size: 60px;">Bonjour <?php echo $current_user->user_firstname; ?></h2>	
+			</div>
+		</div>
 
 		<?php require_once(TEMPLATEPATH.'/parts/search.php'); ?>
 	
