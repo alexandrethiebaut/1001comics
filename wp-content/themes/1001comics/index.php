@@ -49,42 +49,7 @@
 
 		<div class="spacing"></div>
 
-			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/batmanC.jpg">
-				<h4 class="gris">The Merman Batman</h4>
-				<p class="gris">12/04/15</p>
-			</div>
-
-			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/comic.jpg">
-				<h4 class="gris">Résolution Wolverine </h4>
-				<p class="gris">12/04/15</p>
-			</div>
-
-			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/batmanC.jpg">
-				<h4 class="gris">The Merman Batman</h4>
-				<p class="gris">12/04/15</p>
-			</div>
-
-			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/comic.jpg">
-				<h4 class="gris">Résolution Wolverine </h4>
-				<p class="gris">12/04/15</p>
-			</div>
-
-			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/batmanC.jpg">
-				<h4 class="gris">The Merman Batman</h4>
-				<p class="gris">12/04/15</p>
-			</div>
-
-			<div class="small-6 large-2 columns">
-				<img class="comic" src="wp-content/uploads/2015/04/comic.jpg">
-				<h4 class="gris">Résolution Wolverine </h4>
-				<p class="gris">12/04/15</p>
-			</div>
-		</div>
+			<?php require_once(TEMPLATEPATH.'/parts/loopnouveautes.php'); ?>
 
 		<div class="spacing"></div>
 	</section>
@@ -113,7 +78,7 @@
 
 		<div class="spacing"></div>
 
-			<button class="btn-red spacing">Se connecter <i class="fa fa-child"></i></button>
+			<a class="btn-red spacing medium button" href="<?php echo wp_login_url( home_url()); ?>" title="Se Connecter">Se Connecter <i class="fa fa-child"></i></a>
 
 		<div class="spacing"></div>
 

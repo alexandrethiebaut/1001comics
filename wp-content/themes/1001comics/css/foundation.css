@@ -7850,6 +7850,7 @@ button {
 .bg-red:hover {background: #ea4f5e;}
 
 .btn-red {
+  border: solid 1px #e53d4d;
   border-radius: 50px;
   background: #e53d4d;
   text-transform: uppercase; 

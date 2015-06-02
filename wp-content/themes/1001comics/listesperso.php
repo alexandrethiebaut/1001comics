@@ -1,3 +1,5 @@
+
+<section class="headerbg">
 <div id="accroche">
 
 <div class="row" i>
@@ -34,3 +36,4 @@
 	</div>
 	
 </div></div>
+</section>

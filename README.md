@@ -1,2 +1,1 @@
-# 1001comics
-Depot 1001 comics parce que voilà lol
+# 1001 Comics - Your ultimate library
