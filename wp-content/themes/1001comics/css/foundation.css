@@ -60,6 +60,8 @@ audio:not([controls]) {
 /**
  * Remove the gray background color from active links in IE 10.
  */
+.block {display: block;}
+
 a {
   background-color: transparent; }
 
